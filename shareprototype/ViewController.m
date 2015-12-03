@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -32,19 +33,54 @@
 
 -(void)shareContent{
 
+   // Basic simple sharing
+    //get the message we want to share
     NSString *message = @"Detective Conan Rocks";
+    //get the message we want to share
     UIImage *image = [UIImage imageNamed:@"DC_characters"];
+    //array the items you want to share
     NSArray *shareItems =@[message, image];
+    //create activity view controller
     UIActivityViewController *avc =[[UIActivityViewController alloc]initWithActivityItems:shareItems applicationActivities:nil];
+    
+    
+    //to exclude actions extension like print, save images, do the following
+   //avc.excludedActivityTypes = @[UIActivityTypeAssignToContact,UIActivityTypePostToWeibo];
+    
+   //avc.excludedActivityTypes = @[UIActivityTypeAssignToContact];
+    
+   // array of excluded items. (will not be inside the Activities list)
+    NSArray *excluded = @[UIActivityTypePostToFacebook, UIActivityTypePostToTwitter];
+    avc.excludedActivityTypes = excluded;
     
     [self presentViewController:avc animated:YES completion:nil];
     NSLog(@"testing");
+     
+    //end of basic sharing
     
-    //TO do
-    //to exclude actions extension like print, save images, do the following
-    //avc.excludedActivityTypes = @[UIActivityTypeAssignToContact,UIActivityTypePostToWeibo];
+//    
+//    //custom sharing
+//    
+//    //get the message we want to share
+//    NSString *message = @"Mobile App Custom Sharing Test";
+//    // get the image we want to share
+//    UIImage *shareImage = [UIImage imageNamed:@"DC_characters"];
+//    // Prepare the URL we want to share
+//    NSURL *shareUrl = [NSURL URLWithString:@"http://www.detectiveconanrocks"];
+//    
+//    // Create the custom activity provider
+//    SharingActivityProvider *sharingActivityProvider = [[SharingActivityProvider alloc] initWithPlaceholderItem:sharingActivityProvider];
+//    // put the activity provider (for the text), the image, and the URL together in an array
+//    NSArray *activityProviders = @[sharingActivityProvider, shareImage, shareUrl];
     
-    //avc.excludedActivityTypes = @[UIActivityTypeAssignToContact];
+    
+    
+    
+    
+    
+ 
+    
+
 
 
     //if text to long for some app or customise the text share for different app(passing data before selecting which app to share to). Hence we need to subclass(creating new files) it. Below is method 2 without subclass, but the activity types belong to Apple. Cannot have custom types.
@@ -58,8 +94,15 @@
             NSLog(@"Facebook");
         }
         
+        if (activityType == NULL) {
+                NSLog(@"User dismissed the view controller without making a selection.");
+        } else {
+                NSLog(@"Activity was not performed.");
+        }
+        
+        
     }];
-    
+
    
     
     

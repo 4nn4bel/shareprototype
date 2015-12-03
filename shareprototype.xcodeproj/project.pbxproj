@@ -16,6 +16,8 @@
 		EA751F0C1C0D8B4A0051C938 /* shareprototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA751F0B1C0D8B4A0051C938 /* shareprototypeTests.m */; };
 		EA751F171C0D8B4A0051C938 /* shareprototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA751F161C0D8B4A0051C938 /* shareprototypeUITests.m */; };
 		EA956D581C0ECCB2005B97EB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D571C0ECCB2005B97EB /* Social.framework */; };
+		EA956D5F1C10130D005B97EB /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA956D5E1C10130D005B97EB /* CustomActivity.m */; };
+		EA956D621C10134F005B97EB /* GooglePlusActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA956D611C10134F005B97EB /* GooglePlusActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,10 @@
 		EA751F161C0D8B4A0051C938 /* shareprototypeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareprototypeUITests.m; sourceTree = "<group>"; };
 		EA751F181C0D8B4A0051C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA956D571C0ECCB2005B97EB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		EA956D591C0FEEED005B97EB /* SharingActivityProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharingActivityProvider.h; sourceTree = "<group>"; };
+		EA956D5D1C10130D005B97EB /* CustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivity.h; sourceTree = "<group>"; };
+		EA956D5E1C10130D005B97EB /* CustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
+		EA956D601C10134F005B97EB /* GooglePlusActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlusActivity.h; sourceTree = "<group>"; };
+		EA956D611C10134F005B97EB /* GooglePlusActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlusActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,10 @@
 		EA751EE51C0D8B4A0051C938 = {
 			isa = PBXGroup;
 			children = (
+				EA956D601C10134F005B97EB /* GooglePlusActivity.h */,
+				EA956D611C10134F005B97EB /* GooglePlusActivity.m */,
+				EA956D5D1C10130D005B97EB /* CustomActivity.h */,
+				EA956D5E1C10130D005B97EB /* CustomActivity.m */,
 				EA956D571C0ECCB2005B97EB /* Social.framework */,
 				EA751EF01C0D8B4A0051C938 /* shareprototype */,
 				EA751F0A1C0D8B4A0051C938 /* shareprototypeTests */,
@@ -110,7 +119,6 @@
 				EA751EF51C0D8B4A0051C938 /* AppDelegate.m */,
 				EA751EF71C0D8B4A0051C938 /* ViewController.h */,
 				EA751EF81C0D8B4A0051C938 /* ViewController.m */,
-				EA956D591C0FEEED005B97EB /* SharingActivityProvider.h */,
 				EA751EFA1C0D8B4A0051C938 /* Main.storyboard */,
 				EA751EFD1C0D8B4A0051C938 /* Assets.xcassets */,
 				EA751EFF1C0D8B4A0051C938 /* LaunchScreen.storyboard */,
@@ -276,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA956D621C10134F005B97EB /* GooglePlusActivity.m in Sources */,
 				EA751EF91C0D8B4A0051C938 /* ViewController.m in Sources */,
 				EA751EF61C0D8B4A0051C938 /* AppDelegate.m in Sources */,
 				EA751EF31C0D8B4A0051C938 /* main.m in Sources */,
+				EA956D5F1C10130D005B97EB /* CustomActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
