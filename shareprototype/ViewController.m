@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+//#import "GooglePlusActivity.h"
 
 
 @interface ViewController ()
@@ -50,11 +51,19 @@
    //avc.excludedActivityTypes = @[UIActivityTypeAssignToContact];
     
    // array of excluded items. (will not be inside the Activities list)
-    NSArray *excluded = @[UIActivityTypePostToFacebook, UIActivityTypePostToTwitter];
+    NSArray *excluded = @[UIActivityTypePostToFacebook, UIActivityTypePostToTwitter,UIActivityTypeAssignToContact];
     avc.excludedActivityTypes = excluded;
     
-    [self presentViewController:avc animated:YES completion:nil];
-    NSLog(@"testing");
+//    [self presentViewController:avc animated:YES completion:nil];
+//    NSLog(@"testing");
+    
+    
+    GooglePlusActivity *gPlusActivity = [[GooglePlusActivity alloc]init];
+    UIActivityViewController *activityviewcontroller = [[UIActivityViewController alloc]initWithActivityItems:shareItems applicationActivities:@[gPlusActivity]];
+                                     
+                                     
+    
+    
      
     //end of basic sharing
     
@@ -74,7 +83,9 @@
 //    NSArray *activityProviders = @[sharingActivityProvider, shareImage, shareUrl];
     
     
-    
+    [self presentViewController:activityviewcontroller animated:YES completion:nil];
+    NSLog(@"testing2");
+
     
     
     

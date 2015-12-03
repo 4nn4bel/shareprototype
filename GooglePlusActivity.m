@@ -8,6 +8,12 @@
 
 #import "GooglePlusActivity.h"
 
+@interface GooglePlusActivity ()
+
+@property(nonatomic, strong) NSString *text;
+@property(nonatomic, strong) NSURL *url;
+@end
+
 @implementation GooglePlusActivity
 
 
@@ -31,9 +37,9 @@
     return YES;
 }
 
-- (void)prepareWithActivityItems:(NSArray *)activityItems {
+- (void)prepareWithActivityItems:(NSArray *)shareItems {
     // Loop through all activity items and pull out the two we are looking for
-    for (NSObject *item in activityItems) {
+    for (NSObject *item in shareItems) {
         if ([item isKindOfClass:[NSString class]]) {
             self.text = (NSString *) item;
         } else if ([item isKindOfClass:[NSURL class]]) {
