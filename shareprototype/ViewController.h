@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIActivityItemSource>
+//might need <UIActivityItemSource>
 
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
+
+
+
 - (IBAction)shareButtonClicked:(id)sender;
 
 @end

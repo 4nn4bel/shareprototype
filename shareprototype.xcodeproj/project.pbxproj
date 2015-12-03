@@ -15,6 +15,7 @@
 		EA751F011C0D8B4A0051C938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA751EFF1C0D8B4A0051C938 /* LaunchScreen.storyboard */; };
 		EA751F0C1C0D8B4A0051C938 /* shareprototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA751F0B1C0D8B4A0051C938 /* shareprototypeTests.m */; };
 		EA751F171C0D8B4A0051C938 /* shareprototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA751F161C0D8B4A0051C938 /* shareprototypeUITests.m */; };
+		EA956D581C0ECCB2005B97EB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D571C0ECCB2005B97EB /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		EA751F121C0D8B4A0051C938 /* shareprototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shareprototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA751F161C0D8B4A0051C938 /* shareprototypeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareprototypeUITests.m; sourceTree = "<group>"; };
 		EA751F181C0D8B4A0051C938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA956D571C0ECCB2005B97EB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EA956D591C0FEEED005B97EB /* SharingActivityProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharingActivityProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA956D581C0ECCB2005B97EB /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 		EA751EE51C0D8B4A0051C938 = {
 			isa = PBXGroup;
 			children = (
+				EA956D571C0ECCB2005B97EB /* Social.framework */,
 				EA751EF01C0D8B4A0051C938 /* shareprototype */,
 				EA751F0A1C0D8B4A0051C938 /* shareprototypeTests */,
 				EA751F151C0D8B4A0051C938 /* shareprototypeUITests */,
@@ -105,6 +110,7 @@
 				EA751EF51C0D8B4A0051C938 /* AppDelegate.m */,
 				EA751EF71C0D8B4A0051C938 /* ViewController.h */,
 				EA751EF81C0D8B4A0051C938 /* ViewController.m */,
+				EA956D591C0FEEED005B97EB /* SharingActivityProvider.h */,
 				EA751EFA1C0D8B4A0051C938 /* Main.storyboard */,
 				EA751EFD1C0D8B4A0051C938 /* Assets.xcassets */,
 				EA751EFF1C0D8B4A0051C938 /* LaunchScreen.storyboard */,
