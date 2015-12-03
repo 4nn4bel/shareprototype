@@ -22,6 +22,7 @@
 		EA956D861C103420005B97EB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D851C103420005B97EB /* libc++.tbd */; };
 		EA956D881C10342C005B97EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D871C10342C005B97EB /* libz.tbd */; };
 		EA956D8E1C103572005B97EB /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D8D1C103572005B97EB /* libWeChatSDK.a */; };
+		EA956D941C103602005B97EB /* WeChatActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA956D931C103602005B97EB /* WeChatActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		EA956D8D1C103572005B97EB /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		EA956D8F1C103579005B97EB /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		EA956D901C10357D005B97EB /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		EA956D921C103602005B97EB /* WeChatActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatActivity.h; sourceTree = "<group>"; };
+		EA956D931C103602005B97EB /* WeChatActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		EA751EE51C0D8B4A0051C938 = {
 			isa = PBXGroup;
 			children = (
+				EA956D911C1035D5005B97EB /* Wechat */,
 				EA956D821C103400005B97EB /* Framework */,
 				EA956D601C10134F005B97EB /* GooglePlusActivity.h */,
 				EA956D611C10134F005B97EB /* GooglePlusActivity.m */,
@@ -180,6 +184,15 @@
 				EA956D571C0ECCB2005B97EB /* Social.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		EA956D911C1035D5005B97EB /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				EA956D921C103602005B97EB /* WeChatActivity.h */,
+				EA956D931C103602005B97EB /* WeChatActivity.m */,
+			);
+			name = Wechat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +329,7 @@
 				EA751EF91C0D8B4A0051C938 /* ViewController.m in Sources */,
 				EA751EF61C0D8B4A0051C938 /* AppDelegate.m in Sources */,
 				EA751EF31C0D8B4A0051C938 /* main.m in Sources */,
+				EA956D941C103602005B97EB /* WeChatActivity.m in Sources */,
 				EA956D5F1C10130D005B97EB /* CustomActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
