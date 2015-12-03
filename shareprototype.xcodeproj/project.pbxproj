@@ -18,6 +18,10 @@
 		EA956D581C0ECCB2005B97EB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D571C0ECCB2005B97EB /* Social.framework */; };
 		EA956D5F1C10130D005B97EB /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA956D5E1C10130D005B97EB /* CustomActivity.m */; };
 		EA956D621C10134F005B97EB /* GooglePlusActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA956D611C10134F005B97EB /* GooglePlusActivity.m */; };
+		EA956D841C103416005B97EB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D831C103416005B97EB /* libsqlite3.0.tbd */; };
+		EA956D861C103420005B97EB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D851C103420005B97EB /* libc++.tbd */; };
+		EA956D881C10342C005B97EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D871C10342C005B97EB /* libz.tbd */; };
+		EA956D8E1C103572005B97EB /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA956D8D1C103572005B97EB /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,12 @@
 		EA956D5E1C10130D005B97EB /* CustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
 		EA956D601C10134F005B97EB /* GooglePlusActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlusActivity.h; sourceTree = "<group>"; };
 		EA956D611C10134F005B97EB /* GooglePlusActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlusActivity.m; sourceTree = "<group>"; };
+		EA956D831C103416005B97EB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		EA956D851C103420005B97EB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EA956D871C10342C005B97EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EA956D8D1C103572005B97EB /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		EA956D8F1C103579005B97EB /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		EA956D901C10357D005B97EB /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA956D881C10342C005B97EB /* libz.tbd in Frameworks */,
+				EA956D861C103420005B97EB /* libc++.tbd in Frameworks */,
+				EA956D841C103416005B97EB /* libsqlite3.0.tbd in Frameworks */,
 				EA956D581C0ECCB2005B97EB /* Social.framework in Frameworks */,
+				EA956D8E1C103572005B97EB /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,11 +104,11 @@
 		EA751EE51C0D8B4A0051C938 = {
 			isa = PBXGroup;
 			children = (
+				EA956D821C103400005B97EB /* Framework */,
 				EA956D601C10134F005B97EB /* GooglePlusActivity.h */,
 				EA956D611C10134F005B97EB /* GooglePlusActivity.m */,
 				EA956D5D1C10130D005B97EB /* CustomActivity.h */,
 				EA956D5E1C10130D005B97EB /* CustomActivity.m */,
-				EA956D571C0ECCB2005B97EB /* Social.framework */,
 				EA751EF01C0D8B4A0051C938 /* shareprototype */,
 				EA751F0A1C0D8B4A0051C938 /* shareprototypeTests */,
 				EA751F151C0D8B4A0051C938 /* shareprototypeUITests */,
@@ -115,6 +129,9 @@
 		EA751EF01C0D8B4A0051C938 /* shareprototype */ = {
 			isa = PBXGroup;
 			children = (
+				EA956D901C10357D005B97EB /* WXApiObject.h */,
+				EA956D8F1C103579005B97EB /* WXApi.h */,
+				EA956D8D1C103572005B97EB /* libWeChatSDK.a */,
 				EA751EF41C0D8B4A0051C938 /* AppDelegate.h */,
 				EA751EF51C0D8B4A0051C938 /* AppDelegate.m */,
 				EA751EF71C0D8B4A0051C938 /* ViewController.h */,
@@ -152,6 +169,17 @@
 				EA751F181C0D8B4A0051C938 /* Info.plist */,
 			);
 			path = shareprototypeUITests;
+			sourceTree = "<group>";
+		};
+		EA956D821C103400005B97EB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EA956D871C10342C005B97EB /* libz.tbd */,
+				EA956D851C103420005B97EB /* libc++.tbd */,
+				EA956D831C103416005B97EB /* libsqlite3.0.tbd */,
+				EA956D571C0ECCB2005B97EB /* Social.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +458,7 @@
 				INFOPLIST_FILE = shareprototype/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/shareprototype";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jilcreation.shareprototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -442,6 +471,7 @@
 				INFOPLIST_FILE = shareprototype/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/shareprototype";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jilcreation.shareprototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
